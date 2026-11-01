@@ -1,0 +1,300 @@
+{
+  "title": "Gestione dell’orto didattico",
+  "description": "Prototipo navigabile per monitorare colture immaginarie, consultare schede delle piante e registrare attività. Dati e organizzazioni sono interamente inventati.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Dashboard",
+      "description": "Panoramica dell’orto didattico Lumo e delle colture in corso, con filtro per stagione.",
+      "metrics": [
+        {
+          "label": "Colture attive",
+          "value": "12"
+        },
+        {
+          "label": "Attività pianificate",
+          "value": "8"
+        },
+        {
+          "label": "Raccolti previsti",
+          "value": "5"
+        },
+        {
+          "label": "Stagione corrente",
+          "value": "Primavera"
+        }
+      ],
+      "columns": [
+        "Coltura",
+        "Pianta",
+        "Stagione",
+        "Area",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Aiuola Lume",
+          "Pomodoro Rubino",
+          "Primavera",
+          "Settore Nubi",
+          "In crescita"
+        ],
+        [
+          "Vasca Vela",
+          "Lattuga Ondina",
+          "Primavera",
+          "Settore Lume",
+          "Da trapiantare"
+        ],
+        [
+          "Orto Nubi",
+          "Zucchina Solare",
+          "Estate",
+          "Settore Vela",
+          "Pianificata"
+        ],
+        [
+          "Fila Brina",
+          "Carota Arancio",
+          "Primavera",
+          "Settore Brina",
+          "In crescita"
+        ],
+        [
+          "Aiuola Petalo",
+          "Pisello Smeraldo",
+          "Primavera",
+          "Settore Nubi",
+          "Pronta al raccolto"
+        ]
+      ],
+      "form": [
+        "Coltura",
+        "Pianta",
+        "Stagione",
+        "Area",
+        "Stato"
+      ]
+    },
+    {
+      "id": "colture",
+      "title": "Colture",
+      "description": "Tabella consultabile delle colture con filtro per stagione e stato.",
+      "metrics": [
+        {
+          "label": "Totale colture",
+          "value": "12"
+        },
+        {
+          "label": "Primavera",
+          "value": "7"
+        },
+        {
+          "label": "Estate",
+          "value": "5"
+        }
+      ],
+      "columns": [
+        "Coltura",
+        "Pianta",
+        "Stagione",
+        "Area",
+        "Semina",
+        "Raccolto previsto",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Aiuola Lume",
+          "Pomodoro Rubino",
+          "Primavera",
+          "Settore Nubi",
+          "12 marzo",
+          "18 luglio",
+          "In crescita"
+        ],
+        [
+          "Vasca Vela",
+          "Lattuga Ondina",
+          "Primavera",
+          "Settore Lume",
+          "3 marzo",
+          "20 aprile",
+          "Da trapiantare"
+        ],
+        [
+          "Orto Nubi",
+          "Zucchina Solare",
+          "Estate",
+          "Settore Vela",
+          "10 maggio",
+          "22 agosto",
+          "Pianificata"
+        ],
+        [
+          "Fila Brina",
+          "Carota Arancio",
+          "Primavera",
+          "Settore Brina",
+          "8 marzo",
+          "30 giugno",
+          "In crescita"
+        ],
+        [
+          "Aiuola Petalo",
+          "Pisello Smeraldo",
+          "Primavera",
+          "Settore Nubi",
+          "1 marzo",
+          "28 maggio",
+          "Pronta al raccolto"
+        ],
+        [
+          "Vaso Quiete",
+          "Basilico Menta",
+          "Estate",
+          "Settore Lume",
+          "15 maggio",
+          "5 agosto",
+          "Pianificata"
+        ]
+      ],
+      "form": [
+        "Coltura",
+        "Pianta",
+        "Stagione",
+        "Area",
+        "Semina",
+        "Raccolto previsto",
+        "Stato"
+      ]
+    },
+    {
+      "id": "scheda-pianta",
+      "title": "Scheda pianta",
+      "description": "Dettaglio di una pianta selezionata, con indicazioni di coltivazione e attività associate.",
+      "metrics": [
+        {
+          "label": "Colture collegate",
+          "value": "3"
+        },
+        {
+          "label": "Attività aperte",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Pianta",
+        "Coltura",
+        "Stagione",
+        "Esposizione",
+        "Irrigazione",
+        "Nota"
+      ],
+      "rows": [
+        [
+          "Pomodoro Rubino",
+          "Aiuola Lume",
+          "Primavera",
+          "Sole pieno",
+          "Regolare",
+          "Controllare i tutori"
+        ],
+        [
+          "Lattuga Ondina",
+          "Vasca Vela",
+          "Primavera",
+          "Mezz’ombra",
+          "Leggera",
+          "Diradare le foglie"
+        ],
+        [
+          "Zucchina Solare",
+          "Orto Nubi",
+          "Estate",
+          "Sole pieno",
+          "Regolare",
+          "Preparare il trapianto"
+        ]
+      ],
+      "form": [
+        "Pianta",
+        "Coltura",
+        "Stagione",
+        "Esposizione",
+        "Irrigazione",
+        "Nota"
+      ]
+    },
+    {
+      "id": "attivita",
+      "title": "Nuova attività",
+      "description": "Registra un’attività dell’orto e consulta quelle già pianificate. La tabella consente di filtrare per stagione e stato.",
+      "metrics": [
+        {
+          "label": "Attività pianificate",
+          "value": "8"
+        },
+        {
+          "label": "Da completare",
+          "value": "5"
+        },
+        {
+          "label": "Completate",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Attività",
+        "Coltura",
+        "Stagione",
+        "Data",
+        "Responsabile",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Controllo tutori",
+          "Aiuola Lume",
+          "Primavera",
+          "22 marzo",
+          "Squadra Lumo",
+          "Pianificata"
+        ],
+        [
+          "Trapianto lattuga",
+          "Vasca Vela",
+          "Primavera",
+          "24 marzo",
+          "Gruppo Vela",
+          "Da completare"
+        ],
+        [
+          "Semina zucchine",
+          "Orto Nubi",
+          "Estate",
+          "10 maggio",
+          "Squadra Nubi",
+          "Pianificata"
+        ],
+        [
+          "Raccolta piselli",
+          "Aiuola Petalo",
+          "Primavera",
+          "28 maggio",
+          "Gruppo Brina",
+          "Completata"
+        ]
+      ],
+      "form": [
+        "Attività",
+        "Coltura",
+        "Stagione",
+        "Data",
+        "Responsabile",
+        "Stato"
+      ]
+    }
+  ]
+}
